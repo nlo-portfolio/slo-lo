@@ -1,0 +1,15 @@
+version: '3.0'
+
+services:
+  slo-lo:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+    volumes:
+      - .:/home/slo_lo
+    entrypoint: ["ruby", "slo_lo.rb"]
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+    entrypoint: bash -c "service apache2 start > /dev/null 2>&1 && ruby test/test_integration.rb"

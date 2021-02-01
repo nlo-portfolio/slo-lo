@@ -1,0 +1,23 @@
+env:
+  # Number of simultaneous network connections.
+  num_conxs: 500
+  # Time to stall (sleep) in seconds (float accepted).
+  stall: 2
+  verbose: true
+
+# List of targets including hostname and port number.
+targets:
+    # FQDN or IP address of the target.
+  - hostname: 127.0.0.1
+    # Network port number to connect.
+    port: 80
+  
+# List of user agents to randomly choose. Add most user agents below but leave at least one.
+user_agents:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36                      # Chrome Generic Win7
+  - Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0                                                          # Firefox Generic
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17            # Safari
+  - Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko                                                              # IE 11
+
+languages:
+  - Accept-language: en-US,en,q=0.5
