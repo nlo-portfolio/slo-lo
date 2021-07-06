@@ -21,7 +21,6 @@ Fill out the configuration file.<br>
 ruby slo_lo.rb
 ruby test/run_tests.rb --verbose    # (from the project root directory)
 ```
-<br>
 
 ##### Docker: #####
 
