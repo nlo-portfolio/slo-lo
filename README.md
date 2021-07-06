@@ -22,7 +22,6 @@ ruby test/run_tests.rb --verbose    # (from the project root directory)
 ```
 <br>
 Docker:<br>
-
 ```
 docker-compose build
 docker-compose run <slo-lo | test>
