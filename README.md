@@ -15,13 +15,14 @@ Tests require `curl`, `wget`.<br>
 
 Fill out the configuration file.<br>
 <br>
-Ubuntu:<br>
+Ubuntu:
+
 ```
 ruby slo_lo.rb
 ruby test/run_tests.rb --verbose    # (from the project root directory)
 ```
 <br>
-Docker:<br><br>
+Docker:<br>
 
 ```
 docker-compose build
